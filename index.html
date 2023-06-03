@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth-">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -12,10 +12,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                backgroundImage: {
+                    'hero-pattern': "url('/images/bg-pattern-hero.png')",
+                    'footer-texture': "url('/img/footer-texture.png')",
+                }
+            }
+        }
+    }
+</script>
+
 
 <body>
     <!-- 1st section -->
-    <section class="h-screen bg-[#04689C] flex justify-between flex-col z-10 relative">
+    <section class="h-screen bg-hero-pattern bg-cover flex justify-between flex-col z-10 relative drop-shadow-lg">
         <!-- header start -->
         <div>
             <div class="overflow-x-hidden">
@@ -61,26 +74,91 @@
     </section>
 
     <!-- 2nd section -->
-    <section class="bg-red-500 z-10 relative h-screen px-[10rem] py-[3rem]">
-        <h3 class="text-[3rem] font-bold text-slate-100/25 whitespace-nowrap tracking-wide mb-8">TABLE OF CONTENT</h3>
+    <section class="bg-[#0A3C67] z-10 relative h-screen px-[10rem] py-[3rem] bg-cover bg-blend-luminosity">
+        <h3 class="text-[3rem] font-bold text-slate-100/75 whitespace-nowrap tracking-wide mb-16 mt-[4rem]">TABLE OF CONTENT</h3>
 
-        <div class="flex flex-col gap-[1rem] justify-between items-start">
+        <div class="flex flex-col gap-[2.5rem] justify-between items-start">
             <div class="flex justify-between items-center rounded-full bg-white gap-4 px-4 py-3 w-3/4">
-                <div class="text-2xl text-slate-500 tracking-wide">Inconvenience and <span
+                <div class="text-2xl text-slate-500 tracking-wide pl-1">Inconvenience and <span
                         class="text-slate-950 font-bold">lack of efficiency</span> faced by tourists
                 </div>
-                <div class="w-[40px] h-[40px] bg-[#135677] flex items-center justify-center rounded-full">
-                    <img width="30" height="30" src="./images/icons/right-arrow.svg"
-                        alt="long-arrow-right" class="fill-white" />
+                <div class="w-[44px] h-[44px] bg-[#135677] flex items-center justify-center rounded-full">
+                    <img width="30" height="30" src="./images/icons/right-arrow.svg" alt="long-arrow-right"
+                        class="fill-white" />
+                </div>
+            </div>
+            <div class="flex justify-between items-center rounded-full bg-white gap-4 px-4 py-3 w-3/4">
+                <div class="text-2xl text-slate-500 tracking-wide pl-1">Travel wish the ultimate <span
+                        class="text-slate-950 font-bold">solution</span>
+                </div>
+                <div class="w-[44px] h-[44px] bg-[#135677] flex items-center justify-center rounded-full">
+                    <img width="30" height="30" src="./images/icons/right-arrow.svg" alt="long-arrow-right"
+                        class="fill-white" />
+                </div>
+            </div>
+            <div class="flex justify-between items-center rounded-full bg-white gap-4 px-4 py-3 w-3/4">
+                <div class="text-2xl text-slate-500 tracking-wide pl-1"><span class="text-slate-950 font-bold">Market
+                        analysis </span>for our app
+                </div>
+                <div class="w-[44px] h-[44px] bg-[#135677] flex items-center justify-center rounded-full">
+                    <img width="30" height="30" src="./images/icons/right-arrow.svg" alt="long-arrow-right"
+                        class="fill-white" />
+                </div>
+            </div>
+            <div class="flex justify-between items-center rounded-full bg-white gap-4 px-4 py-3 w-3/4">
+                <div class="text-2xl text-slate-500 tracking-wide pl-1"><span class="text-slate-950 font-bold">Business
+                        plan </span>for the future </div>
+                <div class="w-[44px] h-[44px] bg-[#135677] flex items-center justify-center rounded-full">
+                    <img width="30" height="30" src="./images/icons/right-arrow.svg" alt="long-arrow-right"
+                        class="fill-white" />
                 </div>
             </div>
         </div>
+
+        <img src="./images/travelwish-logo.png" class="w-[35rem] ml-auto mt-[2.1rem]" />
     </section>
 
     <!-- 3rd section -->
-    <section class="bg-green-500 z-10 relative h-screen px-[10rem] py-[3rem]">
-        <h3 class="text-[3rem] font-bold text-slate-100/25 whitespace-nowrap tracking-wide">TABLE OF CONTENT</h3>|
+    <section class="z-10 relative h-screen px-[10rem] py-[3rem]">
+        <h3 class="text-[3rem] font-bold text-slate-500 whitespace-nowrap tracking-wide mb-16 mt-[8rem]">THE PROBLEM
+        </h3>
+        <div>
+            <p class="text-3xl tracking-wide leading-loose text-slate-950">The <span class="font-bold">tourism
+                    industry</span> is
+                constantly growing, with
+                millions of people <span class="font-bold">traveling</span> to different parts of the world every year.
+                However,
+                <span class="font-bold">planning</span> a trip can be a
+                <span class="font-bold">time-consuming</span> and overwhelming task,especially for those who are
+                unfamiliar with the
+                destination. It can be difficult to
+                decide on the best places to visit, find <span class="font-bold">trustworthy</span> service providers,
+                and stick to
+                a <span class="font-bold">budget</span>. This can result in many travelers
+                feeling <span class="font-bold">stressed, frustrated,</span> and even <span
+                    class="font-bold">regretful</span> about
+                their trip. Additionally, service providers often struggle to
+                reach <span class="font-bold">potential customers,</span> leading to missed
+                <span class="font-bold">business
+                    opportunities.</span>
+                There is a clear need for a solution that makes
+                <span class="font-bold">trip
+                    planning</span> easier and more efficient for travelers, while also
+                helping service providers reach a wider audience.
+            </p>
+            <p><span style="font-size:0.625em"><br>​</span></p>
+        </div>
+    </section>
 
+    <!-- 4th section -->
+    <section class="z-10 relative h-screen px-[10rem] py-[3rem] bg-blue-500">
+        <h3 class="text-[3rem] font-bold text-slate-100/75 whitespace-nowrap tracking-wide mb-16 text-center">OUR
+            SOLUTION</h3>
+        <div class="flex justify-between items-center">
+            <div class="flex justify-center items-center">
+                <img src="" alt="app interface"/>
+            </div>
+        </div>
     </section>
 </body>
 
