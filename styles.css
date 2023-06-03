@@ -1,6 +1,10 @@
 * {
     font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
 }
+
+
 
 /* .header-image {
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%) !important;
